@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica11Ej1.MainPage"
+             Shell.NavBarIsVisible="False">
+    <!--<Summary>
+            <Createddate>25/6/2024</createddate>
+            <company>Shele</company>
+            <lastmodificationdate>25/6/2024</lastmodificationdate>
+            <lastmodificationdescription>
+                Se añadieron los comentarios al código
+            </lastmodificationdescription>
+            <lastmodifierautor>Maynor</lastmodifierautor>
+    </Summary>-->
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="cambio.jpg"
+                HeightRequest="185"
+                WidthRequest="200"
+                Aspect="AspectFit"
+                />
+
+            <Entry Placeholder="Ingrese el costo del artículo"
+                   HorizontalOptions="Center"
+                   WidthRequest="400"
+                   x:Name="eCosto"/>
+
+            <Entry Placeholder="Ingrese el pago"
+                   HorizontalOptions="Center"
+                   WidthRequest="400"
+                   x:Name="ePago"/>
+
+            <Entry Placeholder="Cambio"
+                   HorizontalOptions="Center"
+                   WidthRequest="400"
+                   x:Name="eCambio"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Calcular cambio" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                WidthRequest="350"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
